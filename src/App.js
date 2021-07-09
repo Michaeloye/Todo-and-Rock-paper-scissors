@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, HashRouter } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { nanoid } from "nanoid";
 import usePrevious from "./usePrevious";
@@ -86,7 +86,7 @@ function App(props) {
   }, [tasks.length, prevTaskLength]);
 
   return (
-    <Router>
+    <HashRouter>
       <Switch>
         <Route path="/rps">
           <Display />
@@ -117,7 +117,7 @@ function App(props) {
           </div>
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
   );
 }
 
