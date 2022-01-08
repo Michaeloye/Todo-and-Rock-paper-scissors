@@ -107,3 +107,7 @@ dist
 # files
 .prettierrc
 .netlify
+
+# files
+.prettierrc
+.netlify
