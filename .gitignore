@@ -105,9 +105,4 @@ dist
 .tern-port
 
 # files
-.prettierrc
-.netlify
-
-# files
-.prettierrc
 .netlify
